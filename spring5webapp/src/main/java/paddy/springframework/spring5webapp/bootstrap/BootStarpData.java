@@ -28,6 +28,7 @@ public class BootStarpData implements CommandLineRunner {
         paddyPublisher.setName("Paddy Publication");
         paddyPublisher.setCity("Mississauga");
         paddyPublisher.setState("Ontario");
+        publisherRepository.save(paddyPublisher);
 
         Author paddy = new Author("Padmanabhan", "Vijendran");
         Book paddyBook = new Book("Show your Work", "12345");
